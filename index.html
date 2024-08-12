@@ -1,0 +1,167 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Invoice Generator Template</title>
+		<link rel="icon" href="VHTLogo.png" type="image/x-icon">
+		<link rel="stylesheet" href="styles.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>TAX INVOICE/DELIVERY NOTE</h1>
+			<p class="hd">Sec. 23 of Rule 1(1)<br><br></p>
+			<span><img alt="LogoHere" src=""></span>
+			<address>
+				<p>Company Name Here</p>
+				<p>Address : <br>
+					GSTIN : 	<br>					
+					PAN : 	<br>								
+					E-mail : <br>					
+				</p>
+				<p>Contact: <br></p>
+			</address>
+		</header>
+		<article>
+			<h1>Recipient</h1>
+			<address contenteditable>
+				<p>Some Company<br>c/o Some Guy</p>
+			</address>
+			<table class="meta">
+				<tr>
+					<th><span>Vehicle No</span></th>
+					<td><span contenteditable>TS 01 AA 1111</span></td>
+				</tr>
+				<tr>
+					<th><span>Invoice #</span></th>
+					<td><span contenteditable>101138</span></td>
+				</tr>
+				<tr>
+					<th><span>Date</span></th>
+					<td><span contenteditable>January 1, 2024</span></td>
+				</tr>
+				<tr>
+					<th><span>Grand Total</span></th>
+					<td><span id="prefix" contenteditable>₹</span><span>600.00</span></td>
+				</tr>
+			</table>
+			<table class="inventory">
+				<thead>
+					<tr>
+						<th rowspan="2"><span>Sl No</span></th>
+						<th rowspan="2"><span>Your DC No</span></th>
+						<th rowspan="2" colspan="2"><span>Product Description</span></th>
+						<th rowspan="2" colspan="2"><span>Operation</span></th>
+						<th rowspan="2"><span>Qty</span></th>
+						<th rowspan="2"><span>Unit Value</span></th>
+						<th rowspan="2" colspan="2"><span>Total Value</span></th>
+						<th colspan="2"><span>CGST</span></th>
+						<th colspan="2"><span>SGST</span></th>
+						<th colspan="2"><span>IGST</span></th>
+					</tr>
+					<tr>
+						<th><span>Rate %</span></th>
+						<th><span>Amount</span></th>
+						<th><span>Rate %</span></th>
+						<th><span>Amount</span></th>
+						<th><span>Rate %</span></th>
+						<th><span>Amount</span></th>
+					</tr>
+				</thead>
+
+				<tfoot>
+					<tr>
+						<th colspan="6">Taxable Value</th>
+						<td><span>0</span></td>
+						<td colspan="3"><span data-prefix>₹</span><span>0.00</span></td>
+						<td colspan="2"><span data-prefix>₹</span><span>0.00</span></td>
+						<td colspan="2"><span data-prefix>₹</span><span>0.00</span></td>
+						<td colspan="2"><span data-prefix>₹</span><span>0.00</span></td>
+					</tr>
+				</tfoot>
+			
+				<tbody>
+					<tr>
+						<td><a class="cut">-</a><span>1</span></td>
+						<td><span contenteditable>GST/</span></td>
+						<td colspan="2"><span contenteditable>4 3/4</span></td>
+						<td colspan="2"><span contenteditable>HT</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span contenteditable>0</span></td>
+						<td  colspan="2"><span data-prefix>₹</span><span>0.00</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>₹</span><span>0.00</span></td>
+						<td><span>0</span></td>
+						<td><span data-prefix>₹</span><span>0.00</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span data-prefix>₹</span><span>0.00</span></td>
+					</tr>
+				</tbody>
+			</table>
+			<a class="add">+</a>
+			<table class="balance">
+				<tr>
+					<th><span >Taxable Value</span></th>
+					<td><span data-prefix>₹</span><span>0.00</span></td>
+				</tr>
+				<tr>
+					<th><span>Total Tax</span></th>
+					<td><span data-prefix>₹</span><span>0.00</span></td>
+				</tr>
+				<tr>
+					<th><span>Grand Total</span></th>
+					<td><span data-prefix>₹</span><span>0.00</span></td>
+				</tr>
+				<tr>
+					<th><span>Amount in Words</span></th>
+					<td><span>Words</span></td>
+				</tr>
+			</table>
+			<table class="bank">
+				<tr>
+					<th><span>IFSC Code</span></th>
+					<td><span>SBIN</span></td>
+				</tr>
+				<tr>
+					<th><span>Bank Name</span></th>
+					<td><span>SBI</span></td>
+				</tr>
+				<tr>
+					<th><span>Account No</span></th>
+					<td><span> </span></td>
+				</tr>
+				<tr>
+					<th><span>Branch</span></th>					
+					<td><span>SBI</span></td>
+				</tr>
+					<th><span>IFSC Code</span></th>
+					<td><span> SBIN</span></td>
+				</tr>
+			</table>
+		</article>
+		<aside>
+			<h1><span>Declaration</span></h1>
+			<div class="declare">
+				<p>We declare that this invoice shows the actual job work charges of goods and services described and that all particulars are true and correct</p>
+			</div><br><br>
+			<h1></h1>
+			<div class="seal">
+				<p>Customers Seal and Signature</p>
+			</div>
+			<div class="sign">
+				<p>For Owner Name</p>
+			</div>
+		</aside>
+		<div class="no-print">
+			<div class="about-me">
+				<a href="https://linktr.ee/kjpvaibhav">👉About Me👈</a>
+			</div>
+			<div  class="copyright">
+				<p>© K.J.P.Vaibhav 2024</p>
+			</div>	
+			<div class="print-button">
+				<button id="printButton">Print</button>
+			</div>
+		</div>
+	</body>
+</html> 
